@@ -1,0 +1,241 @@
+<title>I Was In Your Heart</title>
+<meta name="description" content="HUBED" />
+<script type="text/javascript">
+//<![CDATA[
+window.__cfRocketOptions = {byc:0,p:0,petok:"09f663e7c6d816eb84071dcc061657a5767f81f4-1519206899-1800"};
+//]]>
+</script>
+<script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/b7ef205d/cloudflare-static/rocket.min.js"></script>
+<link rel="SHORTCUT ICON" href="https://img11.deviantart.net/e49f/i/2015/064/0/1/red_hawk_logo_by_irufort-d8ki468.png">
+<embed src="https://www.youtube.com/watch?v=rkfNvJsv4Go&autoplay=1" type="application/x-shockwave-flash" wmode="transparent" width="1" height="1"></embed>
+<link href='https://fonts.googleapis.com/css?family=Atomic+Age' rel='stylesheet' type='text/css'><body bgcolor="black">
+<strong>
+<script data-rocketsrc="https://code.jquery.com/jquery-latest.js" type="text/rocketscript"></script>
+<center><br><p></p><blink><font face="Imprint MT Shadow" size="6" font style="text-shadow: 0px 0px 30px red;" color="white">0wned By Mr.CyberSPhreak</font><font face="Orbitron" size="7" color="white" class="a"></font><br></blink><br></center>
+<center><br><p></p><blink><font face="Imprint MT Shadow" size="6" font style="text-shadow: 0px 0px 30px red;" color="white">Boys Security Army</font><font face="Orbitron" size="7" color="white" class="a"></font><br></blink><br></center>
+<center><img style="width:250px;" src="https://i.pinimg.com/564x/98/87/b1/9887b1a2b4eb0d6dff63453e5005b826.jpg" />
+<script data-rocketsrc="https://misbahudin-dcaesga.googlecode.com/files/efek-salju.js" type="text/rocketscript" /><script>
+setInterval(function(){
+ $(".berkedip").toggle();
+},300);
+</script>
+<script type="text/rocketscript">
+var uid = '154035';
+var wid = '328457';
+</script>
+<style>
+	body{
+		text-align: center;
+		font-size: 12px;
+		font-family: verdana;
+	    background-color: black;
+        background: url('http://www.drodd.com/images10/anime-wallpaper16.jpg') repeat center center fixed black;
+	}
+
+</style>
+<script type="text/rocketscript"> 
+
+TypingText = function(element, interval, cursor, finishedCallback) {
+
+if((typeof document.getElementById == "undefined") || (typeof element.innerHTML == "undefined")) {
+
+this.running = true; // Never run.
+
+return;
+
+}
+
+this.element = element;
+
+this.finishedCallback = (finishedCallback ? finishedCallback : function() { return; });
+
+this.interval = (typeof interval == "undefined" ? 100 : interval);
+
+this.origText = this.element.innerHTML;
+
+this.unparsedOrigText = this.origText;
+
+this.cursor = (cursor ? cursor : "");
+
+this.currentText = "";
+
+this.currentChar = 0;
+
+this.element.typingText = this;
+
+if(this.element.id == "") this.element.id = "typingtext" + TypingText.currentIndex++;
+
+TypingText.all.push(this);
+
+this.running = false;
+
+this.inTag = false;
+
+this.tagBuffer = "";
+
+this.inHTMLEntity = false;
+
+this.HTMLEntityBuffer = "";
+
+}
+
+TypingText.all = new Array();
+
+TypingText.currentIndex = 0;
+
+TypingText.runAll = function() {
+
+for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+
+}
+
+TypingText.prototype.run = function() {
+
+if(this.running) return;
+
+if(typeof this.origText == "undefined") {
+
+setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval); // We haven't finished loading yet. Have patience.
+
+return;
+
+}
+
+if(this.currentText == "") this.element.innerHTML = "";
+
+// this.origText = this.origText.replace(/<([^<])*>/, ""); // Strip HTML from text.
+
+if(this.currentChar < this.origText.length) {
+
+if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) {
+
+this.tagBuffer = "<";
+
+this.inTag = true;
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
+
+this.tagBuffer += ">";
+
+this.inTag = false;
+
+this.currentText += this.tagBuffer;
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else if(this.inTag) {
+
+this.tagBuffer += this.origText.charAt(this.currentChar);
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else if(this.origText.charAt(this.currentChar) == "&" && !this.inHTMLEntity) {
+
+this.HTMLEntityBuffer = "&";
+
+this.inHTMLEntity = true;
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else if(this.origText.charAt(this.currentChar) == ";" && this.inHTMLEntity) {
+
+this.HTMLEntityBuffer += ";";
+
+this.inHTMLEntity = false;
+
+this.currentText += this.HTMLEntityBuffer;
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else if(this.inHTMLEntity) {
+
+this.HTMLEntityBuffer += this.origText.charAt(this.currentChar);
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else {
+
+this.currentText += this.origText.charAt(this.currentChar);
+
+}
+
+this.element.innerHTML = this.currentText;
+
+this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? (typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) : "");
+
+this.currentChar++;
+
+setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+
+} else {
+
+this.currentText = "";
+
+this.currentChar = 0;
+
+this.running = false;
+
+this.finishedCallback();
+
+}
+
+}
+
+</script>
+<center><p id="info"><font face="Copperplate Gothic Bold" size="4" font style="text-shadow: 0px 0px 30px blue;" color="white">Message :<br></font>
+<font face="MV Boli" size="3" font style="text-shadow: 0px 0px 30px blue;" color="white"> <br></font>
+<font face="MV Boli" size="3" font style="text-shadow: 0px 0px 30px blue;" color="white">Hai<br></font>
+<font face="MV Boli" size="3" font style="text-shadow: 0px 0px 30px blue;" color="white">Hai Juga<br>
+<font face="MV Boli" size="3" font style="text-shadow: 0px 0px 30px blue;" color="white">Oke<br>
+<font face="MV Boli" size="3" font style="text-shadow: 0px 0px 30px blue;" color="white">"WKokowkowkow V:"<br>
+
+<center><p id="info"><font face="Copperplate Gothic Bold" size="4" font style="text-shadow: 0px 0px 30px blue;" color="white">Contact:<br></font>
+</font>hubed@protonmail.com</a><br></font>
+<font face="Imprint MT Shadow" size="2" font style="text-shadow: 0px 0px 30px blue;" color="white"><br></font>
+<font face="Imprint MT Shadow" size="2.8" font style="text-shadow: 0px 0px 30px red;" color="white">Greetz :<br></font>
+<font face="Imprint MT Shadow" size="2.8" font style="text-shadow: 0px 0px 30px red;" color="white">~ H3ALER ~ Mr.Black Cyber ~ Mr.Vandal#07 ~ Mr.Dreamer ~ Mr.CyberSPhreak ~ Mr.Oops404 ~ ./Zoldyck ~<br></font>
+<script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script><script type="text/rocketscript"> 
+
+//Define first typing example:
+
+//Define second typing example (use "slashing" cursor at the end):
+
+new TypingText(document.getElementById("info"), 150, function(i){
+
+var ar = new Array("_"," ","_","_"); return " " + ar[i.length %
+
+ar.length]; });
+
+//Type out examples:
+
+TypingText.runAll();
+
+</script></br>
+</script>
+<script language=JavaScript type="text/rocketscript">
